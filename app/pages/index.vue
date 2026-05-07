@@ -45,8 +45,8 @@ const groupedRegulations = computed(() => {
   const groups: Record<string, any> = {}
 
   allRegulations.value.forEach(item => {
-    // 假設路徑結構為 /regulations/org-id/reg-id/version
-    // item.stem 會類似 "regulations/ntpu-su/constitution/2025-02-17"
+    // 假設路徑結構為 /regs/org-id/reg-id/version
+    // item.stem 會類似 "regs/ntpu-su/constitution/2025-02-17"
     const parts = item.stem.split('/')
     if (parts.length < 4) return // 結構不對則跳過
 
