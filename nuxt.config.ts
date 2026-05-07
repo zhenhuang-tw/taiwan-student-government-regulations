@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 const baseURL = 'https://student-regs.zhenhuang.tw/'
+const siteNameCh = '臺灣學生自治規章彙編'
+const repoURL = 'https://github.com/zhenhuang-tw/taiwan-student-government-regulations'
 
 export default defineNuxtConfig({
   devtools: { enabled: process.env.NODE_ENV === 'development' },
@@ -15,7 +17,7 @@ export default defineNuxtConfig({
         lang: 'zh-TW',
         'data-color-mode': '' // 用於配合 color-mode 套件
       },
-      title: '臺灣學生自治規章彙編',
+      title: siteNameCh,
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -31,6 +33,10 @@ export default defineNuxtConfig({
     },
     
     baseURL: baseURL
+  },
+  appConfig: {
+    siteName: siteNameCh,
+    repoURL: repoURL
   },
 
   // 為了靜態生成 (SSG)，啟用 SSR，這樣 nuxt generate 才能產出 HTML
