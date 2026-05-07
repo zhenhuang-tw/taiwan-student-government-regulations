@@ -37,8 +37,7 @@ export default defineNuxtConfig({
   ssr: true,
 
   nitro: {
-    // 使用 github_pages preset 會自動建立 .nojekyll 檔案，避免 _nuxt 資料夾被忽略
-    preset: 'github_pages',
+    preset: 'static',
     prerender: {
       crawlLinks: true, // 確保爬蟲抓取所有連結頁面
       failOnError: false, // 容許部分資源錯誤（如外部圖片）而不中斷部署
