@@ -65,5 +65,11 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  compatibilityDate: '2025-02-17' // 確保 Content V3 相容性日期
+  compatibilityDate: '2026-05-07',
+  
+  vite: {
+    optimizeDeps: {
+      include: ['@vueuse/core']
+    }
+  }
 })
