@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-const baseURL = '/labs/student-governance-regulations/'
+const baseURL = 'https://student-regs.zhenhuang.tw/'
 
 export default defineNuxtConfig({
   devtools: { enabled: process.env.NODE_ENV === 'development' },
@@ -15,7 +15,7 @@ export default defineNuxtConfig({
         lang: 'zh-TW',
         'data-color-mode': '' // 用於配合 color-mode 套件
       },
-      title: '臺灣學生自治規章',
+      title: '臺灣學生自治規章彙編',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
