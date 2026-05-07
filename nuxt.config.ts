@@ -32,7 +32,7 @@ export default defineNuxtConfig({
       ]
     },
     
-    baseURL: baseURL
+    
   },
   appConfig: {
     siteName: siteNameCh,
