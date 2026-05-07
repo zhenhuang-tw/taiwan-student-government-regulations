@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto p-8">
-    <h1 class="text-3xl font-bold mb-4 text-center">臺灣學生自治規章典藏</h1>
-    <p class="mb-8 text-center">點擊法規名稱旁的「檢視」按鈕，查看學生自治法。</p>
+    <h1 class="text-3xl font-bold mb-4 text-center">臺灣學生自治規章彙編</h1>
+    <p class="mb-8 text-center">點擊法規名稱旁的「檢視」按鈕，查看各學生自治組織自訂規章。</p>
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div v-for="(group, orgId) in groupedRegulations" :key="orgId" class="border rounded-lg shadow-md hover:shadow-lg transition bg-white dark:bg-slate-900 overflow-hidden">

@@ -12,7 +12,7 @@
               </svg>
             </div>
             <h1 class="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-lake-600 to-lake-800 dark:from-lake-300 dark:to-lake-500">
-              臺灣學生自治規章
+              臺灣學生自治規章彙編
             </h1>
           </NuxtLink>
 
