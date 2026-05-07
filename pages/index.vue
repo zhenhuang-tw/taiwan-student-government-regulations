@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto p-8">
-    <h1 class="text-3xl font-bold mb-4 text-center">臺灣學生自治規章彙編</h1>
+    <h1 class="text-3xl font-bold mb-4 text-center">{{ appConfig.siteName }}</h1>
     <p class="mb-8 text-center">點擊法規名稱旁的「檢視」按鈕，查看各學生自治組織自訂規章。</p>
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -28,6 +28,8 @@
 </template>
 
 <script setup lang="ts">
+const appConfig = useAppConfig()
+
 // 取得所有法規資料
 const { data: allRegulations } = await useAsyncData('home-regulations', () => {
   return queryCollection('regulations')
