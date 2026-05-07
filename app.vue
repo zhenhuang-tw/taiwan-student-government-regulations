@@ -52,7 +52,7 @@
         <p class="text-slate-500 text-sm">
           &copy; {{ new Date().getFullYear() }} by Zhen Huang.
         </p>
-        <p class="text-xs text-lake-500 mt-2 font-mono"><a href="https://github.com/zhenhuang-tw/student-governance-regulations" class="text-lake-500">GitHub</a></p>
+        <p class="text-xs text-lake-500 mt-2 font-mono"><a href="https://github.com/zhenhuang-tw/taiwan-student-government-regulations" class="text-lake-500">GitHub</a></p>
       </footer>
 
     </div>
