@@ -9,8 +9,13 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/icon',
     '@nuxtjs/color-mode',
-    '@nuxt/content'
+    '@nuxt/content',
+    'nuxt-schema-org'
   ],
+  site: {
+    url: siteNameCh,
+    name: baseURL,
+  },
   app: {
     head: {
       htmlAttrs: {
