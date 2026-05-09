@@ -181,7 +181,15 @@ const sanitizedSource = computed(() => {
 useHead({
   title: () => page.value 
     ? `${page.value.fullTitle}（${toRocDate(page.value.version)}版本）` 
-    : '法規參數錯誤'
+    : '法規參數錯誤',
+  meta: [
+        {
+          name: 'description',
+          content: () => page.value
+            ? `${toRocDate(page.value.version)}版本的《${page.value.fullTitle}》內容。`
+            : '',
+        },
+      ],
 })
 
 useSchemaOrg([
