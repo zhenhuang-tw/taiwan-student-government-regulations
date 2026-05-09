@@ -184,6 +184,22 @@ useHead({
     : '法規參數錯誤'
 })
 
+useSchemaOrg([
+  defineWebPage({
+    name: () => page.value
+      ? `${page.value.fullTitle}（${toRocDate(page.value.version)}版本）`
+      : '法規參數錯誤',
+  }),
+  defineBreadcrumb({
+    itemListElement: [
+      { name: '所有組織', item: '/' },
+      { name: () => page.value?.belongsTo },
+      { name: () => page.value?.shortTitle },
+      { name: () => page.value ? `${toRocDate(page.value.version)}版本` : undefined },
+    ],
+  }),
+])
+
 // ==========================================
 // 5. 自定義渲染元件 (標題樣式；條號加粗)
 // ==========================================
