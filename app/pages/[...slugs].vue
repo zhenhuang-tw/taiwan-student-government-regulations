@@ -251,6 +251,26 @@ const mapComponents = {
     slots.default?.()
   ),
 
+  // 覆寫 OL（有序清單）
+  ol: (props: any, { slots }: any) => h(
+    'ol',
+    {
+      ...props,
+      class: 'list-decimal list-outside pl-6 mb-5 space-y-2 text-lg text-slate-700 dark:text-slate-300'
+    },
+    slots.default?.()
+  ),
+  
+  // 覆寫 LI（清單項目）
+  li: (props: any, { slots }: any) => h(
+    'li',
+    {
+      ...props,
+      class: 'leading-8 text-justify pl-1 marker:text-lake-500 marker:font-bold'
+    },
+    slots.default?.()
+  ),
+
   // 覆寫 Paragraph (P) - 處理條號加粗的核心邏輯
   p: (props: any, { slots }: any) => {
     // 取得 Slot 中的所有子節點
