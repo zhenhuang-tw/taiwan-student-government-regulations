@@ -13,8 +13,8 @@ export default defineNuxtConfig({
     'nuxt-schema-org'
   ],
   site: {
-    url: siteNameCh,
-    name: baseURL,
+    url: baseURL,
+    name: siteNameCh,
   },
   app: {
     head: {
