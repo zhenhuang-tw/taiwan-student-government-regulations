@@ -52,6 +52,7 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true, // 確保爬蟲抓取所有連結頁面
       failOnError: false, // 容許部分資源錯誤（如外部圖片）而不中斷部署
+      autoSubfolderIndex: false
     }
   },
 
